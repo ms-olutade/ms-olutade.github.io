@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icon of Christ Academy · Tuition &amp; Financial Aid · 2026–2027</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,200..900,0..100;1,9..144,200..900,0..100&family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe8db;--bg-soft:#f4efe4;--ink:#1a1612;--ink-soft:#3d3529;--muted:#6b5e4c;--accent:#6f1d1b;--gold:#a8753a;--rule:#c9bfa8;--rule-soft:#d8cfb8}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'EB Garamond',Garamond,serif;font-size:18px;line-height:1.55;font-weight:420;-webkit-font-smoothing:antialiased;background-image:radial-gradient(ellipse at 20% 10%,rgba(168,117,58,.04) 0%,transparent 50%),radial-gradient(ellipse at 80% 60%,rgba(111,29,27,.03) 0%,transparent 50%)}
+h1,h2,h3,h4{font-family:'Fraunces',Garamond,serif;font-weight:400;font-variation-settings:"opsz" 144,"SOFT" 30;line-height:1.1;color:var(--ink)}
+.display-m{font-size:clamp(28px,3.5vw,42px);font-weight:360;letter-spacing:-.01em}
+.eyebrow{font-family:'EB Garamond',serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);font-weight:500;font-feature-settings:"smcp" 1}
+.numeral{font-family:'Fraunces',serif;font-variation-settings:"opsz" 144;font-style:italic;font-weight:300;color:var(--gold)}
+p{margin-bottom:1.1em}
+em{font-style:italic;color:var(--ink-soft)}
+strong{font-weight:600;color:var(--ink)}
+a{color:var(--accent);text-decoration:none;border-bottom:1px solid var(--rule)}
+a:hover{border-bottom-color:var(--accent)}
+.brand{font-family:'Fraunces',serif;font-variation-settings:"opsz" 144;font-weight:500;letter-spacing:.005em;color:var(--ink)}
+.container{max-width:1040px;margin:0 auto;padding:0 48px}
+
+/* Masthead — smaller than program doc; this is a companion piece */
+.masthead{padding:72px 0 56px;border-bottom:1px solid var(--rule);position:relative;text-align:center}
+.masthead::before{content:"";position:absolute;top:28px;left:50%;transform:translateX(-50%);width:36px;height:2px;background:var(--accent)}
+.masthead .eyebrow{display:block;margin-bottom:28px;margin-top:8px}
+.masthead h1{font-size:clamp(40px,6vw,68px);font-weight:300;font-style:italic;font-variation-settings:"opsz" 144,"SOFT" 40;letter-spacing:-.025em;line-height:1;margin-bottom:24px;margin-top:24px}
+.masthead .subtitle{font-size:20px;font-style:italic;color:var(--muted);max-width:640px;margin:0 auto 32px;line-height:1.4}
+.masthead .meta{font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);font-feature-settings:"smcp" 1}
+.masthead .meta span{padding:0 12px}
+.masthead .meta span+span{border-left:1px solid var(--rule)}
+
+/* Section shell */
+section{padding:72px 0;border-bottom:1px solid var(--rule-soft)}
+section:last-of-type{border-bottom:none}
+.section-header{display:grid;grid-template-columns:120px 1fr;gap:32px;margin-bottom:44px;align-items:baseline}
+.section-header .numeral{font-size:64px;line-height:1}
+.section-header .section-title h2{margin-bottom:12px}
+.section-header .section-title .eyebrow{display:block;margin-bottom:16px}
+.section-lead{font-size:21px;font-style:italic;line-height:1.5;color:var(--ink-soft);max-width:680px;margin-bottom:16px;font-weight:400}
+
+/* Opening letter — set in a single column with drop cap */
+.letter{max-width:680px;margin:0 auto;font-size:18px;line-height:1.65;color:var(--ink-soft)}
+.letter p+p{margin-top:16px}
+.letter .drop-cap::first-letter{font-family:'Fraunces',serif;font-variation-settings:"opsz" 144;font-weight:300;font-size:5.2em;float:left;line-height:.85;padding-right:10px;padding-top:6px;color:var(--accent)}
+.letter-sig{margin-top:32px;font-style:italic;color:var(--muted);font-size:16px}
+
+/* Tuition price grid */
+.tuition-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:2px;background:var(--rule);border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);margin-top:24px}
+.tuition-card{background:var(--bg-soft);padding:32px 22px;text-align:center;position:relative;display:flex;flex-direction:column}
+.tuition-card.patron{background:linear-gradient(180deg,var(--bg-soft) 0%,#ece3ce 100%);border-top:2px solid var(--gold);padding-top:30px}
+.tuition-card.patron .tc-price{color:var(--gold)}
+.tuition-card .tc-label{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-feature-settings:"smcp" 1;margin-bottom:10px}
+.tuition-card.patron .tc-label{color:var(--gold)}
+.tuition-card .tc-name{font-family:'Fraunces',serif;font-style:italic;font-weight:340;font-size:20px;margin-bottom:6px;line-height:1.15;min-height:46px;display:flex;align-items:center;justify-content:center}
+.tuition-card .tc-price{font-family:'Fraunces',serif;font-weight:300;font-size:40px;color:var(--accent);line-height:1;margin-bottom:4px;font-variation-settings:"opsz" 144}
+.tuition-card .tc-per{font-style:italic;color:var(--muted);font-size:13px;margin-bottom:18px}
+.tuition-card .tc-desc{font-size:13.5px;line-height:1.5;color:var(--ink-soft);padding-top:14px;border-top:1px solid var(--rule-soft);text-align:left;flex:1}
+
+/* Comparison table — OC comparables */
+.comp-intro{margin-top:48px;font-size:17px;line-height:1.55;color:var(--ink-soft);max-width:720px}
+.comp-wrap{margin-top:28px;overflow-x:auto;margin-left:-48px;margin-right:-48px;padding:0 48px}
+.comp-table{width:100%;border-collapse:collapse;font-size:14px;min-width:620px}
+.comp-table thead th{font-family:'Fraunces',serif;font-weight:400;font-size:12px;letter-spacing:.15em;text-transform:uppercase;color:var(--muted);border-bottom:1.5px solid var(--ink);padding:12px 14px;text-align:left}
+.comp-table thead th:not(:first-child){text-align:right}
+.comp-table tbody td,.comp-table tbody th{padding:13px 14px;border-bottom:1px solid var(--rule-soft);vertical-align:top;line-height:1.35}
+.comp-table tbody th{font-family:'EB Garamond',serif;font-weight:500;color:var(--ink);text-align:left;font-size:15px}
+.comp-table tbody td{color:var(--ink-soft);font-size:14.5px}
+.comp-table tbody td:not(:first-child){text-align:right;font-variant-numeric:tabular-nums}
+.comp-table tbody td em{font-style:italic;color:var(--muted);font-size:13px;display:block;margin-top:2px}
+.comp-table tbody tr.icon-row{background:rgba(168,117,58,.08)}
+.comp-table tbody tr.icon-row th{font-family:'Fraunces',serif;font-style:italic;color:var(--accent);font-weight:400;font-size:16px}
+.comp-table tbody tr.icon-row td{color:var(--accent);font-weight:500}
+.comp-table caption{text-align:left;font-size:13px;font-style:italic;color:var(--muted);padding:0 0 12px;caption-side:top}
+
+.comp-note{margin-top:16px;font-size:13px;font-style:italic;color:var(--muted);padding-left:20px;border-left:2px solid var(--gold);line-height:1.5;max-width:720px}
+
+/* Aid tracks */
+.aid-tracks{display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:32px}
+.aid-card{background:var(--bg-soft);padding:36px 30px;border-top:3px solid var(--accent);position:relative}
+.aid-card.clergy{border-top-color:var(--gold)}
+.aid-card.merit{border-top-color:#2d5f3f}
+.aid-card .aid-tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);font-feature-settings:"smcp" 1;margin-bottom:12px}
+.aid-card h3{font-size:26px;font-style:italic;font-weight:340;margin-bottom:10px;line-height:1.1}
+.aid-card .aid-lead{font-size:15.5px;line-height:1.55;color:var(--ink-soft);font-style:italic;padding-bottom:16px;margin-bottom:16px;border-bottom:1px solid var(--rule)}
+.aid-card p{font-size:14.5px;line-height:1.6;color:var(--ink-soft);margin-bottom:12px}
+.aid-card p:last-child{margin-bottom:0}
+.aid-card strong{color:var(--ink)}
+
+/* Encouragement callout — the warm, restrained Exeter voice */
+.encouragement{background:var(--ink);color:var(--bg);padding:64px 48px;margin-top:56px;text-align:center}
+.encouragement .eyebrow{color:var(--gold);margin-bottom:20px;display:block}
+.encouragement h3{color:var(--bg);font-size:clamp(24px,3vw,34px);font-style:italic;font-weight:300;margin-bottom:20px;max-width:720px;margin-left:auto;margin-right:auto;line-height:1.25}
+.encouragement p{color:#c9bfa8;font-size:16.5px;line-height:1.6;max-width:620px;margin-left:auto;margin-right:auto}
+.encouragement p:last-child{margin-bottom:0}
+
+/* Process steps */
+.steps{margin-top:36px;counter-reset:step}
+.step{display:grid;grid-template-columns:60px 1fr;gap:28px;padding:24px 0;border-top:1px solid var(--rule-soft);counter-increment:step}
+.step:first-child{border-top:1px solid var(--ink)}
+.step:last-child{border-bottom:1px solid var(--rule-soft)}
+.step .step-num{font-family:'Fraunces',serif;font-style:italic;font-weight:300;font-size:36px;color:var(--gold);line-height:1;font-variation-settings:"opsz" 144}
+.step .step-num::before{content:counter(step,decimal-leading-zero)}
+.step h4{font-family:'Fraunces',serif;font-weight:500;font-size:19px;margin-bottom:6px;color:var(--ink)}
+.step p{font-size:15px;line-height:1.6;color:var(--ink-soft);margin-bottom:0}
+
+/* FAQ — plain, honest answers */
+.faq{margin-top:32px}
+.faq-item{padding:24px 0;border-top:1px solid var(--rule-soft)}
+.faq-item:last-child{border-bottom:1px solid var(--rule-soft)}
+.faq-q{font-family:'Fraunces',serif;font-style:italic;font-weight:400;font-size:20px;color:var(--ink);margin-bottom:8px;line-height:1.3}
+.faq-a{font-size:16px;line-height:1.6;color:var(--ink-soft)}
+.faq-a p+p{margin-top:10px}
+
+/* Supporting the School — CTA section */
+.support-lead{max-width:720px;font-size:17px;line-height:1.7;color:var(--ink-soft)}
+.support-lead p+p{margin-top:14px}
+.support-lead strong{color:var(--ink)}
+.vision-block{background:var(--ink);color:var(--bg);padding:56px 48px;margin-top:40px;display:grid;grid-template-columns:1fr 1.3fr;gap:48px;align-items:start}
+.vision-block h3{color:var(--bg);font-size:clamp(26px,3.2vw,36px);font-style:italic;font-weight:300;line-height:1.2;margin-bottom:0}
+.vision-block .vis-eye{color:var(--gold);font-size:11px;letter-spacing:.22em;text-transform:uppercase;font-feature-settings:"smcp" 1;margin-bottom:16px;display:block}
+.vision-block p{color:#d8cfb8;font-size:16px;line-height:1.7;margin-bottom:14px}
+.vision-block p:last-child{margin-bottom:0}
+.vision-block strong{color:var(--bg);font-weight:500}
+.cta-block{background:var(--bg-soft);border-top:3px solid var(--gold);padding:44px 44px 48px;margin-top:44px}
+.cta-block .cta-tag{font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);font-feature-settings:"smcp" 1;margin-bottom:14px;display:block}
+.cta-block h3{font-family:'Fraunces',serif;font-style:italic;font-weight:340;font-size:clamp(26px,3vw,34px);line-height:1.2;margin-bottom:16px;color:var(--ink)}
+.cta-block p{font-size:16px;line-height:1.65;color:var(--ink-soft);margin-bottom:14px;max-width:640px}
+.cta-block p:last-of-type{margin-bottom:24px}
+.cta-block strong{color:var(--ink)}
+.cta-actions{display:flex;gap:16px;flex-wrap:wrap;padding-top:20px;border-top:1px solid var(--rule)}
+.cta-button{display:inline-block;background:var(--accent);color:var(--bg);padding:14px 28px;font-family:'EB Garamond',serif;font-size:15px;font-weight:500;letter-spacing:.04em;border:none;cursor:pointer;border-bottom:none;transition:background .15s}
+.cta-button:hover{background:#8a2625;border-bottom:none}
+.cta-button.secondary{background:transparent;color:var(--ink);border:1px solid var(--ink)}
+.cta-button.secondary:hover{background:var(--ink);color:var(--bg)}
+.tax-note{margin-top:28px;padding:20px 24px;background:var(--bg);border-left:2px solid var(--gold);font-size:14px;line-height:1.55;color:var(--muted);font-style:italic}
+.tax-note strong{color:var(--ink-soft);font-style:normal}
+
+/* Footer */
+footer{padding:48px 0 64px;text-align:center;color:var(--muted);font-size:13px;letter-spacing:.12em;text-transform:uppercase;font-feature-settings:"smcp" 1;background:var(--bg)}
+footer .footer-mark{font-family:'Fraunces',serif;font-size:20px;font-style:italic;font-weight:300;text-transform:none;letter-spacing:-.01em;color:var(--accent);margin-bottom:16px;display:block}
+footer .footer-links{margin-top:12px;text-transform:none;letter-spacing:0;font-size:14px}
+footer .footer-links a{color:var(--ink-soft);border-bottom:1px solid var(--rule)}
+footer .footer-links a+a{margin-left:24px}
+
+.callout{background:var(--bg-soft);border-left:3px solid var(--accent);padding:26px 30px;margin:32px 0;font-style:italic;font-size:16.5px;color:var(--ink-soft);line-height:1.55}
+.callout strong{color:var(--ink);font-style:normal}
+
+@media(max-width:1100px){
+  .tuition-grid{grid-template-columns:repeat(2,1fr)}
+  .aid-tracks{grid-template-columns:1fr;gap:24px;max-width:720px;margin-left:auto;margin-right:auto}
+}
+@media(max-width:860px){
+  body{font-size:17px}
+  .container{padding-left:28px;padding-right:28px}
+  .section-header{grid-template-columns:1fr;gap:16px}
+  .section-header .numeral{font-size:48px}
+  .tuition-grid{grid-template-columns:1fr}
+  .aid-tracks{grid-template-columns:1fr;gap:24px}
+  .step{grid-template-columns:48px 1fr;gap:20px}
+  .step .step-num{font-size:28px}
+  .comp-wrap{margin-left:-28px;margin-right:-28px;padding:0 28px}
+  .encouragement{padding:48px 28px}
+  .vision-block{grid-template-columns:1fr;gap:20px;padding:40px 28px}
+  .cta-block{padding:36px 28px}
+  .cta-actions{flex-direction:column;gap:12px}
+  .cta-button{text-align:center}
+}
+</style>
+</head>
+<body>
+
+<header class="masthead"><div class="container">
+<span class="eyebrow">Admissions · MMXXVI–MMXXVII</span>
+<h1>Tuition &amp; Financial Aid</h1>
+<p class="subtitle">What Icon costs, what Icon does with the difference, and why no qualified family should decline to apply on the basis of tuition alone.</p>
+<div class="meta"><span>Icon of Christ Academy</span><span>Grades 4–12</span></div>
+<div class="meta" style="margin-top:8px"><span style="border-left:none;padding-left:0">Irvine, California</span></div>
+</div></header>
+
+<section><div class="container">
+<div class="letter">
+<p class="drop-cap">Icon of Christ Academy exists to form the next generation of saints. That mission is not hostage to a family's ability to pay, and we have organized our tuition and aid accordingly. Our published rates reflect the cost of running the program honestly — we do not advertise a low number and recover the rest through hidden fees. At the same time, the cost of running the school is not the cost of your child's education to you; the gap between those two numbers is what Icon's aid program exists to close.</p>
+<p>Two families can sit at the same liturgy, send their children to the same school, and pay very different amounts, and both can be in right relationship with the institution. That is how the Church has always worked. It is how Icon works.</p>
+<p>What follows is an honest account of what we charge, what comparable schools charge, and the two aid tracks through which a family can receive support. If after reading this you think Icon is right for your child but the cost is the only reason you would hesitate to apply, please apply anyway, and let us try to make it work.</p>
+<p class="letter-sig">— Chán Kassiane Olutade<br><span style="font-size:14px">Headmaster, Icon of Christ Academy</span></p>
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">I</div><div class="section-title">
+<span class="eyebrow">The Campus</span>
+<h2 class="display-m">In Irvine</h2>
+<p class="section-lead">Icon's founding campus will be located in Irvine, in partnership with a Coptic Orthodox parish with whom the school is currently in active conversation.</p>
+</div></div>
+
+<div class="letter">
+<p>Irvine emerged from a direct survey of prospective Coptic Orthodox families across Southern California. One preference surfaced consistently: a campus central to both north and south Orange County, within practical range of the families whose weekday drives would determine whether the school was possible at all. Irvine sits at exactly that intersection.</p>
+<p>The specific parish partnership, and the physical address that follows from it, will be announced once the conversation reaches formal confirmation. In the meantime, the geography and the reach are clear.</p>
+<p><strong>For Orange County families</strong>, an Irvine campus is reachable within a reasonable commute from Anaheim, Santa Ana, Costa Mesa, Newport Beach, Mission Viejo, Laguna Niguel, San Juan Capistrano, and Yorba Linda — the full arc of the county.</p>
+<p><strong>For Los Angeles County families</strong> in the southern corridor — Long Beach, Lakewood, Cerritos, Whittier, La Mirada — Icon is a 30-to-50-minute drive depending on time of day. For families willing to make that commitment, the school is a real option.</p>
+<p><strong>For Riverside County families</strong> in the west — Corona, Norco, Eastvale — Icon is, for the first time, a Coptic Orthodox classical school within range. Families on the 91 corridor will find the drive comparable to what many secular independent-school families already make.</p>
+<p>It is appropriate that <strong>the first Coptic Orthodox middle and high school in the country</strong> should begin its life hosted within a Coptic Orthodox parish. The school's presence there will be a pastoral decision, shaped in partnership with the host parish's council and in coordination with the Diocese.</p>
+</div>
+
+<div class="callout" style="margin-top:44px"><strong style="color:var(--ink);font-style:normal">A note to families outside the immediate range.</strong> If you are a family who would consider Icon but the geography seems marginal, please talk to us. Several founding families are organizing carpool partnerships, and we are committed to working with families whose commitment to the school is clear but whose commute is at the edge of practicability.</div>
+
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">II</div><div class="section-title">
+<span class="eyebrow">Published Tuition · 2026–2027</span>
+<h2 class="display-m">Four Program Tiers</h2>
+<p class="section-lead">Each tier is described in detail in the <a href="index.html#program-options">Program of Studies</a>. These are the published rates, before any aid.</p>
+</div></div>
+
+<div class="tuition-grid">
+<div class="tuition-card">
+<div class="tc-label">Program A</div>
+<div class="tc-name">Icon Core</div>
+<div class="tc-price">$16,000</div>
+<div class="tc-per">per student · annual</div>
+<div class="tc-desc">Three days on campus (Tuesday–Thursday) with the full academic spine and one Sacred Arts track per year. Structured independent work at home Mondays and Fridays.</div>
+</div>
+<div class="tuition-card">
+<div class="tc-label">Program B</div>
+<div class="tc-name">Icon Immersive</div>
+<div class="tc-price">$19,000</div>
+<div class="tc-per">per student · annual</div>
+<div class="tc-desc">Five days on campus (Monday–Friday) with the full curriculum, extended Sacred Arts time, modern-language study at pace, supervised study hall, and outdoor education.</div>
+</div>
+<div class="tuition-card">
+<div class="tc-label">Program C</div>
+<div class="tc-name">Immersive with Extended Care</div>
+<div class="tc-price">$22,000</div>
+<div class="tc-per">per student · annual</div>
+<div class="tc-desc">All of Icon Immersive, plus supervised extended care until 5:00 p.m. every school day — with access to a full program of electives and student clubs: theatre rehearsals, speech and debate, creative writing, robotics, and additional offerings that will develop with student interest and faculty capacity.</div>
+</div>
+<div class="tuition-card patron">
+<div class="tc-label">Program D</div>
+<div class="tc-name">Icon Patron Family</div>
+<div class="tc-price">$25,000</div>
+<div class="tc-per">per student · annual</div>
+<div class="tc-desc">The full Immersive with Extended Care program at the school's actual per-student operating cost for the founding year. A Patron Family gift underwrites Icon's viability during the years in which the school is still being built — when tuition revenue alone cannot carry a program of this scope, and when the success of what we are doing will determine whether Orthodox classical education takes root in this country at all. We are grateful for every family who chooses this partnership.</div>
+</div>
+</div>
+
+<div class="callout" style="margin-top:40px"><strong style="color:var(--ink);font-style:normal">A word about our founding-year tuition.</strong> The rates above have been set carefully with Icon's founding families in mind. A new school's first year has its own character — and its own responsibilities. We have chosen to open with tuition priced to make the school accessible to as many qualifying families as the mission will bear, rather than at the rate that would exactly match our operating costs. The Patron Family tier exists for families who can close that gap on behalf of the rest of the community. In future years, as the school establishes itself and the program matures further, tuition may be adjusted to reflect the school's full cost; the founding-year rates are offered in the spirit of building Icon together.</div>
+
+<p class="comp-note" style="margin-top:32px">Published tuition includes all academic instruction, materials, standard field trips, retreats, and liturgical participation. It does not include the application fee ($75), uniforms, the one annual family iconography-materials fee (approximately $150), or optional away expeditions in the upper grades.</p>
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">III</div><div class="section-title">
+<span class="eyebrow">For Context</span>
+<h2 class="display-m">How Icon Compares</h2>
+<p class="section-lead">We think the question of tuition is best answered by looking at what families in the same market actually pay, and for what kind of program.</p>
+</div></div>
+
+<p class="comp-intro">A range of independent schools serve Orange and Los Angeles County families who want academic rigor paired with Christian formation. The published middle- and high-school tuition at each, compared with Icon for the same school year, is below.</p>
+
+<div class="comp-wrap">
+<table class="comp-table">
+<thead><tr><th>School</th><th>Location</th><th>Annual Tuition</th></tr></thead>
+<tbody>
+<tr><th>Sage Hill School</th><td>Newport Coast<em>Secular independent · Gr 7–12</em></td><td>$53,770</td></tr>
+<tr><th>Pacifica Christian High School</th><td>Newport Beach<em>Classical Christian · Gr 9–12</em></td><td>$25,490</td></tr>
+<tr class="icon-row"><th>Icon · Patron Family</th><td>Irvine<em>Coptic Orthodox classical · Gr 4–12</em></td><td>$25,000</td></tr>
+<tr class="icon-row"><th>Icon · Immersive + Care</th><td>Irvine<em>Coptic Orthodox classical · Gr 4–12</em></td><td>$22,000</td></tr>
+<tr><th>St. Margaret's Episcopal</th><td>San Juan Capistrano<em>Episcopal independent · Middle School</em></td><td>$21,000+</td></tr>
+<tr class="icon-row"><th>Icon · Immersive</th><td>Irvine<em>Coptic Orthodox classical · Gr 4–12</em></td><td>$19,000</td></tr>
+<tr><th>Crean Lutheran High School</th><td>Irvine<em>Lutheran · Gr 9–12</em></td><td>~$19,000</td></tr>
+<tr><th>Orange Lutheran High School</th><td>Orange<em>Lutheran · Gr 9–12</em></td><td>$18,760</td></tr>
+<tr class="icon-row"><th>Icon · Core</th><td>Irvine<em>Coptic Orthodox classical · Gr 4–12</em></td><td>$16,000</td></tr>
+<tr><th>Orange County private HS average</th><td><em>All religious and secular</em></td><td>$16,618</td></tr>
+</tbody>
+</table>
+</div>
+
+<p class="comp-note">Comparable figures are published 2025–26 or 2026–27 rates drawn from each school's website or from Orange County private-school surveys. Ranges given as "up to" or "approximately" reflect the variation across middle- and upper-school grades at those schools.</p>
+
+<div class="callout" style="margin-top:40px">
+<strong>What the comparison shows.</strong> Icon's published tuition sits at or slightly above the Orange County private-school average, well below the regional classical Christian peer (Pacifica OC), and meaningfully below the independent schools that serve the same academic tier. The reason Icon's tuition is lower than its peers is that we are a new school without the fixed costs of a large legacy campus, and because we have structured the school deliberately to deliver seminary-grade classical Orthodox formation at a tuition level most Coptic and Orthodox families can realistically consider — and that aid can bring within reach of families for whom even this is too much.
+</div>
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">IV</div><div class="section-title">
+<span class="eyebrow">Financial Aid</span>
+<h2 class="display-m">Two Tracks to Bring Tuition Within Reach</h2>
+<p class="section-lead">Icon of Christ Academy offers three distinct aid programs. Most families will use one; some may qualify for more than one.</p>
+</div></div>
+
+<div class="aid-tracks">
+
+<div class="aid-card clergy">
+<div class="aid-tag">Track One</div>
+<h3>The Clergy Children Scholarship</h3>
+<p class="aid-lead">Full-tuition scholarships for the children of serving clergy of the Coptic Orthodox Church.</p>
+<p>The children of our priests, deacons, and consecrated servants carry a weight the rest of the parish does not fully see. As the community whose life their parents have given themselves to, we consider it a basic obligation that their children should receive the best education Icon can offer — at no cost to the clergy family.</p>
+<p><strong>Scholarship amount:</strong> full sticker-price coverage at the chosen program tier, for every year the student is enrolled. There is no cap.</p>
+<p><strong>Who qualifies:</strong> children of ordained Coptic Orthodox clergy in active ministry.</p>
+<p><strong>How the school funds it:</strong> through the Clergy Children Scholarship Fund, an externally fundraised fund separate from tuition revenue. No family's tuition is raised to cover another family's scholarship.</p>
+</div>
+
+<div class="aid-card">
+<div class="aid-tag">Track Two</div>
+<h3>Need-Based Financial Aid</h3>
+<p class="aid-lead">Support for any family whose demonstrated financial need makes Icon otherwise out of reach.</p>
+<p>Icon of Christ partners with an independent third-party financial-aid assessment service to evaluate each family's situation confidentially and uniformly. The assessment produces a recommended family contribution, which the school uses as the basis for an aid package.</p>
+<p><strong>How aid is awarded:</strong> as a reduction in tuition, funded through the <strong>Icon of Christ Scholarship Fund</strong>, parish partnerships, foundation grants, and anchor donors — never through an increase in other families' tuition.</p>
+<p><strong>The assessment is confidential:</strong> Icon receives only the recommendation, not the underlying financial data.</p>
+<p><strong>Admissions decisions are made separately</strong> from aid decisions. Applying for aid does not affect whether a student is admitted.</p>
+</div>
+
+<div class="aid-card merit">
+<div class="aid-tag">Track Three</div>
+<h3>Merit-Based Scholarships</h3>
+<p class="aid-lead">Awards recognizing exceptional academic, artistic, or spiritual promise in applying students — independent of financial need.</p>
+<p>Each year, a portion of the Icon of Christ Scholarship Fund is reserved for merit awards to students whose applications demonstrate unusual intellectual seriousness, demonstrated gift in the sacred arts, or deep formation in Orthodox Christian life. The aim is to ensure that the school draws the strongest possible founding cohort, and that gifted students from any economic background see Icon as a real possibility.</p>
+<p><strong>How awards are considered:</strong> every completed application is reviewed for merit consideration. No separate application is required.</p>
+<p><strong>Scholarship amounts:</strong> vary by award and by the demonstrated profile, ranging from partial-tuition recognition to full-tuition scholarships in exceptional cases.</p>
+<p><strong>Renewability:</strong> merit scholarships are reviewed annually against continued academic and formational progress at the school.</p>
+</div>
+
+</div>
+
+<div class="encouragement">
+<span class="eyebrow">A Note to Families Considering Aid</span>
+<h3>If Icon is right for your child and the cost is the only reason you would not apply, please apply anyway.</h3>
+<p>We know that some families hesitate — to avoid paperwork, to spare a child the hope of a school that might not work out, to not seem to ask for help. These are all reasonable hesitations. None of them should keep you from applying. The aid process is straightforward, the assessment is handled by a third party so that no one at the school sees your finances directly, and every year Icon admits families who initially believed the school was out of reach. We would much rather have that conversation with you than not.</p>
+</div>
+
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">V</div><div class="section-title">
+<span class="eyebrow">The Process</span>
+<h2 class="display-m">How to Apply for Aid</h2>
+<p class="section-lead">The aid application runs in parallel with the admissions application, not after it. We recommend beginning both at the same time.</p>
+</div></div>
+
+<div class="steps">
+<div class="step"><div class="step-num"></div><div>
+<h4>Indicate your intent on the admissions application.</h4>
+<p>A single checkbox on the Icon admissions form tells us you wish to be considered for aid. Checking it does not commit you to anything; it opens the aid process.</p>
+</div></div>
+<div class="step"><div class="step-num"></div><div>
+<h4>Complete the third-party financial-aid assessment.</h4>
+<p>You will be directed to our independent assessment partner, where the application takes most families about thirty minutes. You upload your tax documents directly; Icon never sees them. The assessor produces a recommended family contribution, which is the only figure Icon receives.</p>
+</div></div>
+<div class="step"><div class="step-num"></div><div>
+<h4>Clergy families: complete the Clergy Children Scholarship attestation.</h4>
+<p>A brief one-page form confirming active ministry, co-signed by the serving bishop. This is handled separately from the need-based assessment; clergy families who wish to also apply for need-based aid may do both.</p>
+</div></div>
+<div class="step"><div class="step-num"></div><div>
+<h4>Receive your aid decision with your admissions decision.</h4>
+<p>Aid and admissions decisions are released together, so that every admitted family sees exactly what the year will cost them before they accept a place. There are no surprises in July.</p>
+</div></div>
+</div>
+
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">VI</div><div class="section-title">
+<span class="eyebrow">Supporting the School</span>
+<h2 class="display-m">The Icon of Christ Scholarship Fund</h2>
+<p class="section-lead">Icon of Christ Academy is a registered 501(c)(3) nonprofit organization. Tuition covers the cost of a student's education; the <span class="brand">Icon of Christ Scholarship Fund</span> makes that education available to families for whom tuition alone is not possible.</p>
+</div></div>
+
+<div class="support-lead">
+<p>The majority of families applying to Icon will qualify for some form of aid, and in our founding years the school depends directly on donor generosity to close the gap between what families can pay and what the education actually costs. This is ordinary for a new school. It is also a real and open ask.</p>
+<p>Every dollar given to the <strong>Icon of Christ Scholarship Fund</strong> goes to tuition assistance for admitted students across all three aid tracks — clergy children, need-based, and merit. The Fund is administered separately from the school's operating budget, and its distributions are reviewed annually by the Board.</p>
+</div>
+
+<div class="vision-block">
+<div>
+<span class="vis-eye">Why This Matters Beyond Icon</span>
+<h3>If Icon succeeds, other cities can begin.</h3>
+</div>
+<div>
+<p>Much is riding on the success of this school. If Icon of Christ can demonstrate that the demand for serious Orthodox classical education is real, and that it can be delivered at a level of rigor and formation that stands alongside the best independent schools in the country, we will have built something more than a school in Irvine.</p>
+<p>We will have built a <strong>framework</strong> — a curriculum, a faculty model, an aid structure, a relationship to the parish, a proof of demand — that can be transplanted to other Coptic communities across the American diaspora and the wider Orthodox world. There are families in Chicago, Houston, Atlanta, New Jersey, and Toronto who are asking the same questions the families in Southern California were asking when Icon was first proposed. If we can prove the case here, we can help them begin.</p>
+<p>Every gift to the Scholarship Fund, and every family who enrolls, is an investment not only in the children of the founding cohort but in the hundreds of thousands of Orthodox families across the continent who stand to benefit if a sister network of schools like Icon becomes possible in the next decade.</p>
+</div>
+</div>
+
+<div class="cta-block">
+<span class="cta-tag">Give to the Scholarship Fund</span>
+<h3>Help us build the school that makes the other schools possible.</h3>
+<p>Gifts of any size are received with gratitude. Contributions of $1,000 or more are recognized as <strong>Founding Donors</strong> in the school's annual report; contributions of $10,000 or more are invited into a named scholarship relationship with a specific student across the duration of their enrollment, at the donor's discretion.</p>
+<p>To discuss a gift, to establish a named scholarship, or to include Icon of Christ Academy in your estate or foundation planning, please contact the Office of the Head of School directly.</p>
+<div class="cta-actions">
+<a href="mailto:give@iconacademy.org" class="cta-button">Give to the Scholarship Fund</a>
+<a href="mailto:head@iconacademy.org" class="cta-button secondary">Speak with the Head of School</a>
+</div>
+<div class="tax-note"><strong>A note on tax deductibility.</strong> Icon of Christ Academy is a registered 501(c)(3) nonprofit. Voluntary gifts to the <span class="brand">Icon of Christ Scholarship Fund</span> and to the school's general operating fund are tax-deductible to the full extent allowed by law. Tuition payments are <strong>not</strong> tax-deductible, as they constitute payment for services rendered. Please consult your tax advisor regarding the deductibility of any specific gift.</div>
+</div>
+
+</div></section>
+
+<section><div class="container">
+<div class="section-header"><div class="numeral">VII</div><div class="section-title">
+<span class="eyebrow">Questions Families Ask</span>
+<h2 class="display-m">A Short FAQ</h2>
+</div></div>
+
+<div class="faq">
+
+<div class="faq-item">
+<div class="faq-q">Does applying for financial aid affect my child's admissions decision?</div>
+<div class="faq-a"><p>No. Admissions and financial aid are evaluated separately. The admissions committee does not see aid applications or family financial information at any point during the admissions decision.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">We are not Coptic Orthodox. Can we still apply?</div>
+<div class="faq-a"><p>Yes. Icon is Coptic Orthodox in its ecclesial identity and liturgical life, and serves first the Coptic Orthodox families of Southern California. Other Orthodox and Christian families whose formation aligns with the school's mission are welcome to apply, and a significant portion of our families come from the broader Orthodox and Christian communities.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">We have more than one child. Is there a sibling discount?</div>
+<div class="faq-a"><p>Yes. Enrolled siblings receive a reduction in the published rate for the second and each subsequent child. The exact amount is set each year; for 2026–2027 the reduction is 10% on the second child and 15% on each additional child. This is applied automatically and does not require a separate application.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Can we pay in installments rather than annually?</div>
+<div class="faq-a"><p>Yes. Families may pay annually, semi-annually, or in ten monthly installments, at no additional cost. The payment-plan selection is made at the point of enrollment.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">What if our financial situation changes mid-year?</div>
+<div class="faq-a"><p>Please tell us. Icon is a small school and can respond with flexibility that larger institutions cannot. Families who experience a significant financial change mid-year — job loss, medical crisis, family disruption — may apply for a mid-year aid adjustment. No child has been asked to leave Icon for financial reasons.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">Why does the school publish comparisons to other schools?</div>
+<div class="faq-a"><p>Because families ask, and because the answer is not hidden. Tuition is a reasonable and important question. We want families to make the Icon decision with clear eyes — both about what the school costs, and about what the school offers that other schools in the same market do not.</p></div>
+</div>
+
+<div class="faq-item">
+<div class="faq-q">We are not applying as a family, but we would like to support the school. How do we contribute?</div>
+<div class="faq-a"><p>Gifts to the <span class="brand">Icon of Christ Scholarship Fund</span> can be made in any amount at <a href="mailto:give@iconacademy.org">give@iconacademy.org</a>. For donors considering gifts of $10,000 or more, for foundation and corporate partnerships, or for estate and legacy planning, please contact the Office of the Head of School. Icon of Christ Academy is a registered 501(c)(3) nonprofit, and all voluntary contributions to the Scholarship Fund are tax-deductible to the full extent allowed by law.</p></div>
+</div>
+
+</div>
+
+</div></section>
+
+<footer><div class="container">
+<span class="footer-mark">Icon of Christ Academy</span>
+<div>Office of Admissions · MMXXVI–MMXXVII</div>
+<div class="footer-links">
+<a href="index.html">Program of Studies</a>
+<a href="index.html#program-options">Program Options</a>
+<a href="index.html#departments">Departments</a>
+<a href="mailto:give@iconacademy.org">Give to the Scholarship Fund</a>
+<a href="admissions_ar.html">العربية</a>
+</div>
+</div></footer>
+
+</body>
+</html>
