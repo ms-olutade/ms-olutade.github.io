@@ -1,2 +1,2 @@
 # mrsolutade.github.io
-Icon of Christ Academy Curriculum Overview
+All Saints Orthodox Academy Program Overview
